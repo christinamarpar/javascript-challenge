@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="input-group">
+          <!-- 'state' id allows me to reference this input from my js file -->
+          <div class="col-sm-2">
+            <input type="text" class="form-control" id="date" placeholder="Date">
+          </div>
+          <!-- 'state' id allows me to reference this input from my js file -->
+          <div class="col-sm-2">
+            <input type="text" class="form-control" id="city" placeholder="City">
+          </div>
+          <!-- 'state' id allows me to reference this input from my js file -->
+          <div class="col-sm-2">
+            <input type="text" class="form-control" id="state" placeholder="State">
+          </div>
+          <!-- 'state' id allows me to reference this input from my js file -->
+          <div class="col-sm-2">
+            <input type="text" class="form-control" id="country" placeholder="Country">
+          </div>
+          <!-- 'state' id allows me to reference this input from my js file -->
+          <div class="col-sm-2">
+            <input type="text" class="form-control" id="shape" placeholder="Shape">
+          </div>
+          <!-- 'search' id allows me to capture this action from within my js file -->
+          <div class="col-sm-2" style="padding: 50px;">
+            <a id="search" class="btn btn-default">Search</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped" id="paged-table" >
+          <thead>
+            <tr>
+              <th>date</th>
+              <th>city</th>
+              <th>state</th>
+              <th>country</th>
+              <th>shape</th>
+              <th>time</th>
+              <th>comment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- js file will fill in here -->
+          </tbody>
+        </table>
+        <nav id="nav">
+          <!-- js file will fill in here -->
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script src="js/data.js" type="text/javascript"></script>
+  <script src = "https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
